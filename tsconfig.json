@@ -1,0 +1,20 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"_version": "2.0.0",
+	"extends": "@tsconfig/strictest/tsconfig.json",
+	"compilerOptions": {
+		"target": "es2021",
+		"lib": ["es2021"],
+		"module": "es2022",
+		"moduleResolution": "Bundler",
+		"types": ["@cloudflare/workers-types/2023-07-01"],
+		"resolveJsonModule": true,
+		"allowJs": true,
+		"noEmit": true,
+		"isolatedModules": true,
+		"allowSyntheticDefaultImports": true,
+		"forceConsistentCasingInFileNames": true
+	},
+	"exclude": ["test"],
+	"include": ["worker-configuration.d.ts", "src/**/*.ts"]
+}
